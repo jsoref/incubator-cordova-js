@@ -21,7 +21,7 @@ describe("builder", function () {
         var target = {},
             objects = {cat: {}};
 
-        builder.build(objects).intoButDontClobber(target);
+        builder.build(objects).intoButDoNotClobber(target);
 
         expect(target.cat).toBeDefined();
     });
@@ -41,7 +41,7 @@ describe("builder", function () {
                } 
             };
 
-        builder.build(objects).intoButDontClobber(target);
+        builder.build(objects).intoButDoNotClobber(target);
 
         expect(target.homer.bart).toBeDefined();
         expect(target.homer.maggie).toBe(require('cordova/plugin/compass'));
