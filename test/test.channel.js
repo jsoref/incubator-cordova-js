@@ -100,7 +100,7 @@ describe("channel", function () {
 
             expect(c.numHandlers).toEqual(0);
         });
-        it("should not decrement handlers length more than once if unsubing a single handler", function() {
+        it("should not decrement handlers length more than once if unsubscribing a single handler", function() {
             var firstHandler = function(){};
             c.subscribe(firstHandler);
 
